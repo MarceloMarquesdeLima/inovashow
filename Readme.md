@@ -1,6 +1,8 @@
 # Projeto Inova 100 - Cadastro de Participantes da Feira
 
 ### Projeto Inova 100 - Backend
+
+#### Aplicação desenvolvida com Node + Express + SQLite com o banco de dados
 <img width="199" height="659" alt="image" src="https://github.com/user-attachments/assets/4da60638-16b6-401d-8045-f57e9cc4e873" />
 
 ### Endpoint
