@@ -17,6 +17,7 @@ export default function dashboard({ navigation }: any) {
   ];
 
   const menus = [
+    'Dashboard',
     'Cidade',
     'Expositor',
     'Pessoa',

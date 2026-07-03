@@ -1,11 +1,12 @@
-
 import { View, Text, TouchableOpacity } from 'react-native';
 import { router } from 'expo-router';
 
-export default function Dashboard() {
+export default function Home() {
   return (
     <View>
-      <Text>Dashboard</Text>
+      <TouchableOpacity onPress={() => router.push('/dashboard')}>
+        <Text>Dashboard</Text>
+      </TouchableOpacity>
 
       <TouchableOpacity onPress={() => router.push('/cidade')}>
         <Text>Cidade</Text>
