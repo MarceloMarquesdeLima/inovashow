@@ -199,7 +199,7 @@ export default function PessoaForm() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    backgroundColor: '#090909',
     padding: 16,
   },
   title: {

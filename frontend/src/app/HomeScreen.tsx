@@ -1,5 +1,11 @@
+
 import React from 'react';
-import { View, Pressable, Text, StyleSheet } from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
 
 export default function HomeScreen() {
   const menus = [
@@ -13,14 +19,16 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Home</Text>
+
       {menus.map((item) => (
-        <Pressable
+        <TouchableOpacity
           key={item}
           style={styles.button}
           onPress={() => console.log(item)}
         >
           <Text style={styles.buttonText}>{item}</Text>
-        </Pressable>
+        </TouchableOpacity>
       ))}
     </View>
   );
@@ -28,20 +36,29 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
+    flex: 1,
+    backgroundColor: '#000',
+    padding: 20,
   },
-  button: {
-    backgroundColor: '#2196F3',
-    paddingVertical: 14,
-    paddingHorizontal: 20,
-    borderRadius: 8,
-    marginBottom: 10,
-    elevation: 2,
+  title: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    color: '#FFC107',
+    marginBottom: 20,
+  },
+  
+button: {
+  backgroundColor: '#FFC107',
+  paddingVertical: 18,
+  borderRadius: 15,
+  marginBottom: 15,
+  borderWidth: 2,
+  borderColor: '#FFF',
   },
   buttonText: {
-    color: '#FFF',
-    fontSize: 16,
-    fontWeight: '600',
+    color: '#000',
+    fontSize: 18,
+    fontWeight: 'bold',
     textAlign: 'center',
   },
 });

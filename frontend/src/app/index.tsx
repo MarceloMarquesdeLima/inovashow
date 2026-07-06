@@ -39,26 +39,29 @@ export default function HomeScreen() {
         <Text style={styles.text}>Expositor</Text>
       </Pressable>
 
-      <Pressable
-        style={styles.button}
-        onPress={() => abrirTela('Pessoa')}
-      >
-        <Text style={styles.text}>Pessoa</Text>
-      </Pressable>
+      <div>
+            <Pressable
+              style={styles.button}
+              onPress={() => abrirTela('Pessoa')}
+            >
+              <Text style={styles.text}>Pessoa</Text>
+            </Pressable>
 
-      <Pressable
-        style={styles.button}
-        onPress={() => abrirTela('Vendedor')}
-      >
-        <Text style={styles.text}>Vendedor</Text>
-      </Pressable>
+            <Pressable
+              style={styles.button}
+              onPress={() => abrirTela('Vendedor')}
+            >
+              <Text style={styles.text}>Vendedor</Text>
+            </Pressable>
 
-      <Pressable
-        style={styles.button}
-        onPress={() => abrirTela('Visita')}
-      >
-        <Text style={styles.text}>Visita</Text>
-      </Pressable>
+            <Pressable
+              style={styles.button}
+              onPress={() => abrirTela('Visita')}
+            >
+              <Text style={styles.text}>Visita</Text>
+            </Pressable>
+      </div>
+      
     </View>
   );
 }
@@ -66,9 +69,10 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: 16,
+    backgroundColor: '#1E1E1E',
   },
   button: {
-    backgroundColor: '#2196F3',
+    backgroundColor: '#f0e514',
     borderRadius: 8,
     padding: 15,
     marginBottom: 10,
@@ -78,5 +82,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: 16,
+  },
+  background: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#1E1E1E',
   },
 });
